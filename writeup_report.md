@@ -10,7 +10,7 @@
 The goals / steps of this project are the following:
   
 * Use the simulator to collect data of good driving behavior
-* Build, a convolution neural network in Keras that predicts steering angles from images  
+* Build a convolution neural network in Keras that predicts steering angles from images  
 * Train and validate the model with a training and validation set  
 * Test that the model successfully drives around track one without leaving the road  
 * Summarize the results with a written report
@@ -35,10 +35,12 @@ The goals / steps of this project are the following:
 
 My project includes the following files:  
 
-* [model.ipynb](./model.ipynb) contains the script to create and train the model
-* [drive.py](./drive.py) is a script for driving the car in autonomous mode  
-* [model.h5](./model.h5) contains a trained convolution neural network   
-* [writeup_report.md](./writeup_report.md) summarizes the results
+* [model.ipynb](./model.ipynb) - contains the script to create and train the model (my contribution)
+* [drive.py](./drive.py) -  a script for driving the car in autonomous mode (created by Udacity)
+* [model.h5](./model.h5) - contains a trained convolution neural network, created by [model.ipynb](./model.ipynb)
+* [writeup_report.md](./writeup_report.md) - describes the the project in detail 
+* [video.mp4](./video.mp4) - the video output showing the car driving autonomously around the track
+
 
 #### 2. Submission includes functional code
 Using the Udacity provided simulator and my [drive.py](./drive.py) file, the car can be driven autonomously around the track by executing 
