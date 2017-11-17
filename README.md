@@ -1,11 +1,11 @@
-#**README**
+# **README**
 
 
 ---
 
-##**Behavioral Cloning Project**
+## **Behavioral Cloning Project**
 
-###The Project
+### The Project
 ---
 
 The goals / steps of this project are the following:

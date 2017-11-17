@@ -1,6 +1,6 @@
-#**Behavioral Cloning** 
+# **Behavioral Cloning** 
 
-##Writeup 
+## Writeup 
 
 
 ---
@@ -29,9 +29,9 @@ The goals / steps of this project are the following:
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
 
 ---
-###Files Submitted & Code Quality
+### Files Submitted & Code Quality
 
-####1. Submission includes all required files and can be used to run the simulator in autonomous mode
+#### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:  
 
@@ -40,19 +40,19 @@ My project includes the following files:
 * [model.h5]() contains a trained convolution neural network   
 * [writeup_report.md]() summarizes the results
 
-####2. Submission includes functional code
+#### 2. Submission includes functional code
 Using the Udacity provided simulator and my [drive.py]() file, the car can be driven autonomously around the track by executing 
 ```sh
 python drive.py model.h5
 ```
 
-####3. Submission code is usable and readable
+#### 3. Submission code is usable and readable
 
 The [model.ipynb]() file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. An appropriate model architecture has been employed
+#### 1. An appropriate model architecture has been employed
 
 The network architecture is defined in cell #8 of [model.ipynb]().
 The model consists of a convolutional neural network based on the network architecture used by the autonomous 
@@ -65,17 +65,17 @@ The network starts off by normalizing each of the RGB color channels. Then, the 
 The network is then flattened and dropout is applied (with 30% of connections dropped). Finally, four fully connected layers are applied with decreasing output sizes of 100, 50, 10, and 1. ReLU activation functions are applied after each fully connected layer, except for the final one.
 
 
-####2. Attempts to reduce overfitting in the model
+#### 2. Attempts to reduce overfitting in the model
 
 The model contains a dropout layer in order to reduce overfitting (in cell #8 of [model.ipynb]()). 
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting. The train/validation/test split is done in cell #6 of [model.ipynb](). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
-####3. Model parameter tuning
+#### 3. Model parameter tuning
 
 The model uses an adam optimizer, so the learning rate was not tuned manually (cell #8 of [model.ipynb]()).
 
-####4. Appropriate training data
+#### 4. Appropriate training data
 
 Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving and recovering from the left and right sides of the road.
 
@@ -83,9 +83,9 @@ For details about how I created the training data, see the next section.
 
 The final cell (cell #11) of [model.ipynb]() shows a plot of steering angle for the full training data (including validation and test) in chronological order before shuffling of the data. The plot shows that approximately the first half has normal driving steering angles, while the second half of the data set has very large steering angles used to recover from the side of the road.
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. Solution Design Approach
+#### 1. Solution Design Approach
 
 My strategy for designing a model architecture was to first use a well know architecture and then modify it if needed. So, I used nVidia's architecture as described earlier in this writeup. I thought this model might be appropriate because it was specifically used by nVidia to predict steering angles from road images.
 
@@ -100,11 +100,11 @@ The final step was to run the simulator to see how well the car was driving arou
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
 
-####2. Final Model Architecture
+#### 2. Final Model Architecture
 
 The final model architecture (cell #8 of [model.ipynb]()) is fully described earlier in this write-up!
 
-####3. Creation of the Training Set & Training Process
+#### 3. Creation of the Training Set & Training Process
 
 Example training images are plotted in cell #5 of [model.ipynb]().
 
@@ -138,6 +138,6 @@ The ideal number of epochs was 7 as evidenced by the car driving fairly well aro
 
 I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
-####3. Simulation
+#### 3. Simulation
 
 I used Udacity's version of [drive.py]() to produce a [video](video.mp4) of the car driving one time around the track. The car always remains on the drivable part of the road. Yay!
