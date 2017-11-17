@@ -29,7 +29,7 @@ The project includes the following files:
 * [writeup_report.md]() - describes the the project in detail 
 * [video.mp4]() - the video output showing the car driving autonomously around the track
 
-Please refer to [write-up](./writeup_report.md) for detailed information about this project.
+Please refer to [writeup_report.md]() for detailed information about this project.
 
 Look at [model.ipynb]() to see the code that trains the model.
 
